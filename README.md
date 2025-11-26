@@ -8,7 +8,8 @@ The project allows  to input own data or generate random arrays, sort them using
 - Input custom array values
 - Generate random arrays
 - Visualize sorted output
-- Compare execution time of:
+  
+Compare execution time of:
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
