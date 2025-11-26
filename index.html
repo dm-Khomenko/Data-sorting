@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="./img/ico.png">
+		<link rel="stylesheet" href="./css/style.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<title>Sorting Visualizer</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Sorting Visualizer</h1>
+			<p class="sub">Compare classic sorting algorithms</p>
+
+			<form class="input-data">
+				<div class="own-numbers-block">
+					<label for="txtInput">
+						Input Data
+						<input type="text" name="txtInput" id="txtInput" />
+					</label>
+					<button type="button" id="okBtn" class="okBtn">OK</button>
+				</div>
+				<div class="buttons">
+					<button type="button" id="randomBtn" class="primary">
+						Create random
+					</button>
+					<button type="button" id="clear">Clear</button>
+				</div>
+				<p class="current">Current array: <code class="readyArray"></code></p>
+			</form>
+
+			<div class="algorithms">
+				<button id="bubble">Bubble Sort</button>
+				<button id="selection">Selection Sort</button>
+				<button id="insertion">Insertion Sort</button>
+				<button id="quick">Quick Sort</button>
+				<button id="merge">Merge Sort</button>
+				<button id="compare">Compare All</button>
+			</div>
+			<div>
+				<canvas id="myChart"></canvas>
+				<div id="timeOutput"></div>
+			</div>
+		</div>
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>
